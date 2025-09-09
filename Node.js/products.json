@@ -1,0 +1,16 @@
+
+[
+    
+       {
+  "id": 1,
+  "name": "Ray-Ban Classic",
+  "description": "משקפי שמש בעיצוב קלאסי",
+  "imgUrl":"/images/1.webp",
+  "price": 349.90,
+  "stock": 112,
+  "category": "משקפי שמש"
+}
+
+    
+    
+]
