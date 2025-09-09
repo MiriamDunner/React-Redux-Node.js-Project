@@ -1,37 +1,3 @@
-// import { useSelector } from 'react-redux';
-
-// function CartPage() {
-//   const items = useSelector((state) => state.cart.items);
-
-//   return (
-//     <div className="cart">
-//       <h2>העגלה שלך</h2>
-//       {items.length === 0 ? (
-//         <p>אין מוצרים בעגלה.</p>
-//       ) : (
-        
-//         <ul>
-//           {items.map((item) => (
-//             <li key={item.id}>
-//               {item.name} - {item.price} ₪ 
-//               <img src={`http://localhost:4000${item.imgUrl}`}
-//                style={{ width: '60px', height: 'auto' }}></img>
-//                <button >+</button>
-//                <button>-</button>
-//             </li>
-            
-//           ))}
-       
-//         </ul>
-        
-//       )}
-      
-//     </div>
-//   );
-// }
-
-// export default CartPage;
-// pages/CartPage.jsx
 import { useSelector, useDispatch } from 'react-redux';
 import { increaseQty, decreaseQty, removeFromCart, clearCart } from '../features/cart/cartSlice';
 import { ToastContainer, toast } from 'react-toastify';
@@ -82,8 +48,7 @@ function CartPage() {
                   <span className="cart-name">{item.name}</span>
                   <span className="cart-price">מחיר: {item.price} ₪</span>
                   <div className="cart-qty">
-                    {/* <button onClick={() => dispatch(decreaseQty(item.id))}>−</button> */}
-                    <button onClick={() => {
+                                        <button onClick={() => {
   
           dispatch(decreaseQty(item.id));
        toast.info('הכמות הוקטנה.', { position: 'bottom-right' });
@@ -93,7 +58,6 @@ function CartPage() {
 </button>
 
                     <span>{item.qty}</span>
-                    {/* <button onClick={() => dispatch(increaseQty(item.id))}>+</button> */}
                     <button
   onClick={() => {
     dispatch(increaseQty(item.id));
@@ -105,8 +69,7 @@ function CartPage() {
 
                   </div>
                   <span className="cart-total">סה"כ: {(item.price * item.qty).toFixed(2)} ₪</span>
-                  {/* <button className="remove-btn" onClick={() => dispatch(removeFromCart(item.id))}>הסר</button> */}
-                  <button
+                                    <button
   className="remove-btn"
   onClick={() => {
     dispatch(removeFromCart(item.id));

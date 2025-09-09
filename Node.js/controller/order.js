@@ -11,7 +11,7 @@ function get(req, res) {
 
     })
 }
-//אפשרות ראשונה ליצא פונקציה מדף
+
 exports.getById = (req, res) => {
 
     fs.readFile("orders.json", "utf-8", (err, data) => {
@@ -39,9 +39,7 @@ exports.getById = (req, res) => {
 exports.post = (req, res) => {
 
     fs.readFile("orders.json", "utf-8", (err, data) => {
-        //המרה של טקסט למערך
         let orders = JSON.parse(data);
-        //body =  לתוכן שנשלח בפונקציה פןסט 
         orders.push(req.body);
         fs.writeFile("orders.json", JSON.stringify(orders), (err) => {
             if (err) {
@@ -52,5 +50,5 @@ exports.post = (req, res) => {
         })
     })
 }
-//אפשרות שניה ליצא פונקציה מדף
+
 exports.get = get;

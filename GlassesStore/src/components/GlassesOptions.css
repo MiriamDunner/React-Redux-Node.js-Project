@@ -1,4 +1,4 @@
-/* ========== מבנה כללי ========== */
+
 .orderPageLayout {
   display: flex;
   justify-content: space-between;
@@ -9,7 +9,7 @@
   background-color: #fff;
 }
 
-/* ========== תמונה ========== */
+
 .orderImageWrapper {
   flex: 1.4;
   max-width: 720px;
@@ -25,7 +25,6 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
-/* ========== קונטיינר אופציות ========== */
 .glasses-container {
   text-align: right;
   border: 1px solid #e0e0e0;
@@ -35,7 +34,6 @@
   background-color: #fff;
 }
 
-/* ========== אופציות עדשות ========== */
 .options-list {
   display: flex;
   flex-direction: column;
@@ -71,7 +69,6 @@
   font-size: 16px;
 }
 
-/* ========== קלטים לעין ========== */
 .eye-section {
   margin-top: 24px;
 }
@@ -89,7 +86,7 @@
   width: 100px;
 }
 
-/* ========== מודאל ========== */
+
 .modal-overlay {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -131,13 +128,13 @@
   cursor: pointer;
 }
 
-/* ========== אנימציה ========== */
+
 @keyframes fadeInModal {
   from { opacity: 0; transform: scale(0.95); }
   to { opacity: 1; transform: scale(1); }
 }
 
-/* ========== רספונסיביות ========== */
+
 @media (max-width: 768px) {
   .orderPageLayout {
     flex-direction: column;

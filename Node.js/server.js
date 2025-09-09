@@ -14,10 +14,8 @@ app.listen(4000, () => {
     console.log("listen port 4000");
 })
 
-// parse requests of content-type - application/json
 app.use(bodyParser.json());
 
-// parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
@@ -36,7 +34,6 @@ app.get('/person', (req, res) => {
     res.send("hello world person");
 })
 
-// app.use("/student", student);
 
 app.use("/product", product);
 app.use("/order", order);
@@ -51,5 +48,4 @@ app.use((req, res, next) => {
 })
 
 
-// מאפשר גישה לקבצים בתיקיית images
 app.use('/images', express.static(path.join(__dirname, 'images')));

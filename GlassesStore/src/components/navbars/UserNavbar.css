@@ -11,14 +11,12 @@
   font-family: 'Urbanist', sans-serif;
 }
 
-/* צד שמאל – האייקונים */
 .nav-links {
   display: flex;
   gap: 28px;
   align-items: center;
 }
 
-/* מרכז – לוגו */
 .navbar-center {
   position: absolute;
   left: 50%;
@@ -30,7 +28,6 @@
   width: auto;
 }
 
-/* אייקונים */
 .nav-links a img,
 .logout-button img {
   height: 40px;
@@ -44,7 +41,6 @@
   transform: scale(1.1);
 }
 
-/* פרופיל */
 .profile-wrapper {
   display: flex;
   align-items: center;

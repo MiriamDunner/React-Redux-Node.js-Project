@@ -23,9 +23,6 @@ function ManagerNavbar() {
         <Link to="/products">
           <img src="/images/product.png" alt="מוצרים" />
         </Link>
-        {/* <Link to="/cart">
-          <img src="/images/cart100.jpg" alt="עגלה" />
-        </Link> */}
         <Link to="/allUsersPage"> 
            <img src="/images/person.jpg" alt="persons" />
               </Link>

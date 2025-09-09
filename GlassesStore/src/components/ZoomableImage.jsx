@@ -43,9 +43,9 @@ function ZoomableImage({ src, alt }) {
             width: '100%', height: '100%',
             backgroundImage: `url(${src})`,
             backgroundRepeat: 'no-repeat',
-            backgroundSize: '200%', // הגדלה פי 2
+            backgroundSize: '200%', 
             backgroundPosition: `${position.x}% ${position.y}%`,
-            pointerEvents: 'none', // כדי שהעכבר לא יתקע
+            pointerEvents: 'none', 
             border: '2px solid rgba(0,0,0,0.1)',
           }}
         />
